@@ -1,0 +1,11 @@
+{
+  "Name": "xujunshuo's Character Universe",
+  "Author": "Helen",
+  "Version": "1.0.0",
+  "Description": "这里是徐均朔的星露谷角色宇宙",
+  "UniqueID": "Helen.xujunshuoCharacterUniverse",
+  "ContentPackfor":{
+    "UniqueID":"Pathoschild.ContentPatcher",
+    "MinimumVersion":"1.0.0"
+  } 
+}

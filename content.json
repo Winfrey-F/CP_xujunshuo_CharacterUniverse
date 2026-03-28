@@ -1,0 +1,78 @@
+{
+    "Format": "2.8.0",
+    "Changes": [
+        {
+            "LogName":"NPC Portrait",
+            "Action": "Load",
+            "Target": "Portraits/郑微岚",
+            "FromFile": "assets/portraits/郑微岚.png"
+        },
+        {   "LogName":"NPC manifest",
+            "Action": "Load",
+            "Target": "Characters/郑微岚",
+            "FromFile": "assets/sprites/郑微岚.png"
+        },
+        {
+            "LogName":"NPC dialogue",
+            "Action": "Load",
+            "Target": "Characters/Dialogue/郑微岚",
+            "FromFile": "assets/dialogue/dialogueZheng.json"
+        },
+         {
+            "LogName":"NPC rainy",
+            "Action": "Load",
+            "Target": "Characters/Dialogue/rainy",
+            "FromFile": "assets/dialogue/rainy.json"
+        },
+        {
+            "LogName":"NPC schedule",
+            "Action": "Load",
+            "Target": "Characters/schedules/郑微岚",
+            "FromFile": "assets/schedule/scheduleZheng.json"
+        },
+        {
+            "LogName":"NPC function",
+            "Action": "EditData",
+            "Target": "Data/Characters",
+            "Entries": {
+                "郑微岚": {
+                    "DisplayName": "郑微岚", 
+                    "BirthSeason": "Summer",
+                    "BirthDay": 4,
+                    "HomeRegion": "Town",
+                    "Gender": "Male",
+                    "Age": "Adult",
+                    "Manner": "Polite",
+                    "SocialAnxiety": "shy",
+                    "Optimism": "Positive",
+                    "Isdarkskinned":false,
+                    "CanBeRomanced": true,
+                    "CanReceiveGifts":true,
+                    "Calendar":"AlwaysShown",
+                    "SocialTab":"AlwaysShown",
+
+                    "Home": [
+                        {
+                            "Id": "Default",
+                            "Location": "BusStop",
+                            "Tile": {
+                            "X": 4,
+                            "Y": 5
+                            }
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "LogName":"NPC Tastes",
+            "Action": "EditData",
+            "Target": "Data/NPCGiftTastes",
+            "Entries": {
+                "郑微岚": "谢谢@先生，我很喜欢！/207 232 233 400/Thank you! This is a very interesting specimen./-5 -79 422/...What is this?/80 330/This is disgusting./2/That was very thoughtful of you./-4/ "
+            }
+        }
+        
+        
+    ]
+}
