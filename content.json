@@ -1,78 +1,234 @@
 {
+    
     "Format": "2.8.0",
     "Changes": [
         {
-            "LogName":"NPC Portrait",
+            "LogName": "NPC Portrait",
             "Action": "Load",
             "Target": "Portraits/郑微岚",
             "FromFile": "assets/portraits/郑微岚.png"
         },
-        {   "LogName":"NPC manifest",
+        {
+            "LogName": "NPC Portrait",
+            "Action": "Load",
+            "Target": "Portraits/马特",
+            "FromFile": "assets/portraits/马特.png"
+        },
+        {
+            "LogName": "NPC Portrait",
+            "Action": "Load",
+            "Target": "Portraits/1900",
+            "FromFile": "assets/portraits/1900.png"
+        },
+        {
+            "LogName": "NPC Portrait",
+            "Action": "Load",
+            "Target": "Portraits/程勃",
+            "FromFile": "assets/portraits/程勃.png"
+
+        },
+    
+        {
+            "LogName": "NPC Sprite",
             "Action": "Load",
             "Target": "Characters/郑微岚",
             "FromFile": "assets/sprites/郑微岚.png"
         },
         {
-            "LogName":"NPC dialogue",
+            "LogName": "NPC Sprite",
             "Action": "Load",
-            "Target": "Characters/Dialogue/郑微岚",
-            "FromFile": "assets/dialogue/dialogueZheng.json"
+            "Target": "Characters/程勃",
+            "FromFile": "assets/sprites/程勃.png"
         },
-         {
-            "LogName":"NPC rainy",
+        {
+            "LogName": "NPC Sprite",
+            "Action": "Load",
+            "Target": "Characters/马特",
+            "FromFile": "assets/sprites/马特.png"
+        },
+        {
+            "LogName": "NPC Sprite",
+            "Action": "Load",
+            "Target": "Characters/1900",
+            "FromFile": "assets/sprites/1900.png"
+        },
+        {
+            "LogName": "NPC Animation",
+            "Action": "EditData",
+            "Target": "Data/AnimationDescriptions",
+            "Entries": {
+                "郑微岚": "spriteIndex 0/spriteIndex 1/spriteIndex 2/spriteIndex 3",
+                "1900": "spriteIndex 0/spriteIndex 1/spriteIndex 2/spriteIndex 3",
+                "马特": "spriteIndex 0/spriteIndex 1/spriteIndex 2/spriteIndex 3",
+                "程勃": "spriteIndex 0/spriteIndex 1/spriteIndex 2/spriteIndex 3"
+            }
+        },
+        {
+             "LogName": "NPC dialogue",
+             "Action": "Load",
+             "Target": "Characters/Dialogue/郑微岚",
+             "FromFile": "assets/dialogue/dialogueZheng.json"
+        },
+        {
+             "LogName": "NPC dialogue",
+             "Action": "Load",
+             "Target": "Characters/Dialogue/马特",
+             "FromFile": "assets/dialogue/dialogueMatt.json"
+        },
+        {
+            "LogName": "NPC dialogue",
+            "Action": "Load",
+            "Target": "Characters/Dialogue/1900",
+            "FromFile": "assets/dialogue/dialogue1900.json"
+        },
+        {
+            "LogName": "NPC rainy",
             "Action": "Load",
             "Target": "Characters/Dialogue/rainy",
             "FromFile": "assets/dialogue/rainy.json"
         },
         {
-            "LogName":"NPC schedule",
+            "LogName": "NPC schedule",
             "Action": "Load",
             "Target": "Characters/schedules/郑微岚",
             "FromFile": "assets/schedule/scheduleZheng.json"
         },
         {
-            "LogName":"NPC function",
-            "Action": "EditData",
-            "Target": "Data/Characters",
-            "Entries": {
-                "郑微岚": {
-                    "DisplayName": "郑微岚", 
-                    "BirthSeason": "Summer",
-                    "BirthDay": 4,
-                    "HomeRegion": "Town",
-                    "Gender": "Male",
-                    "Age": "Adult",
-                    "Manner": "Polite",
-                    "SocialAnxiety": "shy",
-                    "Optimism": "Positive",
-                    "Isdarkskinned":false,
-                    "CanBeRomanced": true,
-                    "CanReceiveGifts":true,
-                    "Calendar":"AlwaysShown",
-                    "SocialTab":"AlwaysShown",
-
-                    "Home": [
-                        {
-                            "Id": "Default",
-                            "Location": "BusStop",
-                            "Tile": {
-                            "X": 4,
-                            "Y": 5
-                            }
-                        }
-                    ]
-                }
-            }
+            "LogName": "NPC schedule",
+            "Action": "Load",
+            "Target": "Characters/schedules/马特",
+            "FromFile": "assets/schedule/scheduleMatt.json"
         },
         {
-            "LogName":"NPC Tastes",
-            "Action": "EditData",
-            "Target": "Data/NPCGiftTastes",
-            "Entries": {
-                "郑微岚": "谢谢@先生，我很喜欢！/207 232 233 400/Thank you! This is a very interesting specimen./-5 -79 422/...What is this?/80 330/This is disgusting./2/That was very thoughtful of you./-4/ "
-            }
+            "LogName": "NPC schedule",
+            "Action": "Load",
+            "Target": "Characters/schedules/1900",
+            "FromFile": "assets/schedule/schedule1900.json"
+        },
+{
+    "LogName": "NPC function",
+    "Action": "EditData",
+    "Target": "Data/Characters",
+    "Entries": {
+        "郑微岚": {
+            "DisplayName": "郑微岚",
+            "BirthSeason": "Spring",
+            "BirthDay": 4,
+            "HomeRegion": "Town",
+            "Gender": "Male",
+            "Age": "Adult",
+            "Manner": "Polite",
+            "SocialAnxiety": "shy",
+            "Optimism": "Neutral",
+            "Isdarkskinned": false,
+            "CanBeRomanced": true,
+            "CanReceiveGifts": true,
+            "Calendar": "AlwaysShown",
+            "SocialTab": "AlwaysShown",
+            "ItemDeliveryQuests": true,
+            "FlowerDanceCanDance": true,
+            "Home": [
+                {
+                    "Id": "Default",
+                    "Location": "BusStop",
+                    "Tile": {
+                        "X": 19,
+                        "Y": 16
+                    }
+                }
+            ]
+        },
+        "马特": {
+            "DisplayName": "马特",
+            "BirthSeason": "Summer",
+            "BirthDay": 5,
+            "HomeRegion": "Town",
+            "Gender": "Male",
+            "Age": "Adult",
+            "Manner": "Neutral",
+            "Optimism": "Positive",
+            "Isdarkskinned": true,
+            "CanBeRomanced": true,
+            "CanReceiveGifts": true,
+            "Calendar": "AlwaysShown",
+            "SocialTab": "AlwaysShown",
+            "ItemDeliveryQuests": true,
+            "FlowerDanceCanDance": true,
+            "Home": [
+                {
+                    "Id": "Default",
+                    "Location": "Saloon",
+                    "Tile": {
+                        "X": 3,
+                        "Y": 7
+                    }
+                }
+            ]
+        },
+        "1900": {
+            "DisplayName": "1900",
+            "BirthSeason": "Spring",
+            "BirthDay": 1,
+            "HomeRegion": "Town",
+            "Gender": "Male",
+            "Age": "Adult",
+            "Manner": "Polite",
+            "SocialAnxiety": "shy",
+            "Optimism": "Neutral",
+            "Isdarkskinned": false,
+            "CanBeRomanced": true,
+            "CanReceiveGifts": true,
+            "Calendar": "AlwaysShown",
+            "SocialTab": "AlwaysShown",
+            "ItemDeliveryQuests": true,
+            "FlowerDanceCanDance": true,
+            "Home": [
+                {
+                    "Id": "Default",
+                    "Location": "Saloon",
+                    "Tile": {
+                        "X": 12,
+                        "Y": 14
+                    }
+                }
+            ]
+        },
+        "程勃":{
+            "DisplayName": "程勃",
+            "BirthSeason": "Fall",
+            "BirthDay": 16,
+            "HomeRegion": "Town",
+            "Gender": "Male",
+            "Age": "Adult",
+            "Manner": "Polite",
+            "SocialAnxiety": "shy",
+            "Optimism": "Neutral",
+            "CanBeRomanced": true,
+            "SocialTab": "AlwaysShown",
+            "Home": [
+                {
+                    "Id": "Default",
+                    "Location": "AdventureGuild",
+                    "Tile": { 
+                        "X": 10, 
+                        "Y": 7 
+                    }
+                }
+            ]
         }
-        
-        
-    ]
+    }   
+},
+{
+    "LogName": "NPC Tastes",
+    "Action": "EditData",
+    "Target": "Data/NPCGiftTastes",
+    "Entries": {
+         "郑微岚": "谢谢@先生，我很喜欢！/207 232 233 400/Thank you! This is a very interesting specimen./-5 -79 422/...What is this?/80 330/This is disgusting./2/That was very thoughtful of you./-4/",
+         "马特": "谢谢你！/207 232 233 400/嗯，还不错。/20 22/...我不太喜欢。/80 330/这是什么？/2/谢了。/-4/",
+         "1900": "哇，谢谢！/207 232 233 400/挺好的。/46 48/呃...不太喜欢。/80 330/请拿远点。/2/谢谢。/-4/",
+         "程勃": "非常感谢！/207 232 233 400/这个不错。/20 22/...不太喜欢。/80 330/这是什么？/2/谢谢你的心意。/-4/"
+    }
 }
+]
+}
+
