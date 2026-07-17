@@ -232,3 +232,30 @@
 ]
 }
 
+{
+  "Format": "2.8.0",
+  "Changes": [
+    {
+      "Action": "Load",
+      "Target": "Data/Events/ArchaeologyHouse",
+      "FromFile": "assets/Data/Events/ArchaeologyHouse.json"
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/Events/Hospital",
+      "FromFile": "assets/Data/Events/Hospital.json"
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/Events/FarmHouse",
+      "FromFile": "assets/Data/Events/FarmHouse.json"
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/mail",
+      "Entries": {
+        "郑微岚14心礼物": "^^ 这本《星露谷物语》是我以郑微岚的名义出版的第一部小说，非常感谢你在创作中给与我的帮助！这是我的一点心意，希望你能收下。^   —郑微岚%item object 348 1 %%item object 437 1 %%break%%"
+      }
+    }
+  ]
+}
